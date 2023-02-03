@@ -51,10 +51,10 @@ const updateDataCtrl = async (req, res, next) => {
 
 const deleteDataCtrl = async (req, res, next) => {
     try {
-        const removedData = await Data.remove({ _id: req.params.dataColorId });
+        const removedData = await DataColor.remove({ _id: req.params.dataColorId });
         res.json(removedData);
     } catch (error) {
-        res.json({ message: error });
+        res.json({message: error})
     }
 }
 
