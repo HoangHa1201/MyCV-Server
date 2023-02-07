@@ -27,6 +27,9 @@ const postDataCtrl = async (req, res, next) => {
             start: req.body.start,
             end: req.body.end,
             content: req.body.content,
+            projectName: req.body.projectName,
+            projectDemo: req.body.projectDemo,
+            product: req.body.product
         })
         const savedData = await newData.save()
         res.json(savedData);
@@ -46,6 +49,9 @@ const updateDataCtrl = async (req, res, next) => {
                     start: req.body.start,
                     end: req.body.end,
                     content: req.body.content,
+                    projectName: req.body.projectName,
+                    projectDemo: req.body.projectDemo,
+                    product: req.body.product
                 }
             }
         )

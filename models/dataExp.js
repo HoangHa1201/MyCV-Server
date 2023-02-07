@@ -21,6 +21,19 @@ const dataSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    projectName: {
+        type: String,
+        required: true
+    },
+    projectDemo: {
+        type: String,
+        required: true
+    },
+    product: {
+        type: String,
+        required: true
+    }
+
 
 });
 
