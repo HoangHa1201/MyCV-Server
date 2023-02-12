@@ -28,6 +28,8 @@ const postDataCtrl = async (req, res, next) => {
             linkCV: req.body.linkCV,
             address: req.body.address,
             phone: req.body.phone,
+            faceBook: req.body.faceBook,
+            linkedin: req.body.linkedin,
             email: req.body.email,
             website: req.body.website,
         })
@@ -50,6 +52,8 @@ const updateDataCtrl = async (req, res, next) => {
                     linkCV: req.body.linkCV,
                     address: req.body.address,
                     phone: req.body.phone,
+                    faceBook: req.body.faceBook,
+                    linkedin: req.body.linkedin,
                     email: req.body.email,
                     website: req.body.website,
                 }
